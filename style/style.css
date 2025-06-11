@@ -1,0 +1,269 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 2px 20px;
+    background-color: transparent;
+}
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #040404;
+    color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    color: #40bcc0;
+    font-size: 16px;
+}
+h1 {
+    font-size: 70px;
+    color: #e4e4e4;
+}
+h2 {
+    font-size: 55px;
+    color: #e4e4e4;
+}
+h3 {
+    font-size: 35px;
+    color: #e4e4e4;
+    line-height: 1px;
+}
+h4{
+    font-size: 20px;
+    color: #e4e4e4;
+}
+p {
+    font-size: 16px;
+    color: #e4e4e4;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding-top: 10px;
+}
+.menu li {
+    position: relative;
+}
+.menu > li > a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 10px;
+    display: block;
+    transition: color 0.3s;
+    width: 100px;
+}
+.menu > li > a:hover {
+    color: #40bcc0;
+}
+nav a.active {
+    color: #40bcc0;
+    font-weight: bold;
+}
+#headerPHP{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#title{
+    width: 50%;
+}
+#nav{
+    justify-content: flex-end;
+    width: 50%;
+    display: flex;
+    text-align: right;
+}
+#AvalehePealkiri{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* ← Центрирование по обеим осям */
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* для контраста */
+}
+#taust{
+    width: 100%;
+    object-fit: cover; /* чтобы картинка не растягивалась криво */
+    display: block;
+}
+#esilehtbody {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+footer{
+    text-align: center;
+    width: 100%;
+}
+label{
+    font-size: 16px;
+}
+input[type=text],
+input[type=number],
+input[type=submit],
+input[type=button],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=time],
+select{
+    background-color: #e4e4e4;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: black;
+    box-shadow: inset 0 0 0 1px #3c3c3c;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-top: 5px;
+    margin-right: 10px;
+
+}
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=time]{
+    width: 200px;
+}
+select{
+    width: 230px;
+}
+/* Hover — мягкое свечение */
+input[type=text]:hover,
+input[type=number]:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+input[type=password]:hover,
+input[type=date]:hover,
+input[type=time]:hover,
+select:hover{
+    box-shadow: inset 0 0 0 1px #40bcc0;
+    background-color: #e4e4e4;
+}
+
+/* Focus — сияющий обвод */
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=submit]:focus,
+input[type=button]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus
+input[type=date]:focus,
+input[type=time]:focus,
+select:focus{
+    box-shadow: 0 0 8px 2px rgba(64, 188, 192, 0.6);
+    border: none;
+    outline: none;
+    background-color: #e4e4e4;
+    color: black;
+}
+
+/* Для кнопок — можно отдельно */
+input[type=submit],
+input[type=button] {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #40bcc0;
+    color: #e4e4e4;
+    box-shadow: none;
+}
+input[type=submit]:hover,
+input[type=button]:hover {
+    background-color: #040404;
+    color: white;
+}
+
+input[type=radio]{
+    accent-color: #40bcc0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#dinner{
+    width: 200px;
+}
+form {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.flexcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#bronlist, #menuulist {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#bronlist th, #bronlist td, #menuulist th, #menuulist td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #666;
+}
+
+#bronlist th, #menuulist th {
+    background-color: #1d1d1d;
+    color: #40bcc0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#bronlist td, #menuulist td {
+    color: #f2f2f2;
+}
+
+#bronlist tr:hover, #menuulist tr:hover {
+    background-color: #292929;
+}
+#forms {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    align-self: flex-start;
+}
+#bronlist {
+    overflow: hidden;
+}
+#loginform th, #loginform td, #regform th, #regform td {
+    padding: 0px 10px;
+    text-align: left;
+}
+#broneeri, #lisa, #lisamine {
+    width: 230px;
+}
+#menuutooded{
+    text-align: left;
+}
+#lisamenuu{
+
+}
