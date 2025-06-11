@@ -31,7 +31,8 @@
     <div id="AvalehePealkiri">
         <h1>WELCOME TO MinuResto</h1>
         <input type="button" value="BRONEERI" onclick="location.href='login.php'">
-        <input type="button" value="GITHUB" onclick="location.href='login.php'">
+        <br>
+        <input type="button" value="GITHUB" onclick="window.location.href='https://github.com/AnnaOleks/MinuResto'">
     </div>
 </div>
 <footer>
